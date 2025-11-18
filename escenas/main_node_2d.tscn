@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cosh5yiqh0avx"]
+
+[ext_resource type="PackedScene" uid="uid://d2t8ygt5bns11" path="res://escenas/jugador_character_body_2d.tscn" id="1_vyldc"]
+[ext_resource type="PackedScene" uid="uid://bdrsjjic2k0j6" path="res://escenas/terreno_static_body_2d.tscn" id="2_ufca4"]
+[ext_resource type="PackedScene" uid="uid://bmt5n1op5iwsy" path="res://escenas/spawner_node_2d.tscn" id="3_mgkxu"]
+
+[node name="Main-Node2D" type="Node2D"]
+
+[node name="Jugador-CharacterBody2D" parent="." instance=ExtResource("1_vyldc")]
+position = Vector2(485, 92)
+
+[node name="Terreno-StaticBody2D" parent="." instance=ExtResource("2_ufca4")]
+position = Vector2(516, 553)
+
+[node name="spawner-Node2D" parent="." instance=ExtResource("3_mgkxu")]
