@@ -1,9 +1,9 @@
-extends CharacterBody2D
-
+extends Personaje
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
+##Las variables de vida, ataque, area_de_ataque y area_de_colision se pueden definir por inspector
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,3 +23,23 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	recibir_dano()
+	
+
+func atacar():
+	pass
+	
+
+func recibir_dano():
+	## esta condición es solo una prueba, para ver que muere
+	if Input.is_action_just_pressed("ui_down"):
+		vida -= 1
+		print("Vida actual:", vida)
+
+		if vida <= 0:
+			morir()
+
+func morir():
+	print("El jugador ha muerto.")
+	get_tree().paused = true
+	queue_free()
