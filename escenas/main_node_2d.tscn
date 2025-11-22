@@ -8,7 +8,6 @@
 
 [node name="Jugador" parent="." instance=ExtResource("1_vyldc")]
 position = Vector2(485, 92)
-vida = 3
 
 [node name="Terreno-StaticBody2D" parent="." instance=ExtResource("2_ufca4")]
 position = Vector2(516, 553)

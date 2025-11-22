@@ -4,13 +4,13 @@ extends CharacterBody2D
 @export var vida: int = 1
 @export var ataque: int = 1
 @export var area_de_ataque: Area2D
-@export var area_de_colision: CollisionObject2D
+@export var area_de_colision: CollisionShape2D
 
 
-@abstract func atacar()
+@abstract func atacar(objetivo)
 
 
-@abstract func recibir_dano()
+@abstract func recibir_dano(dano)
 
 
 @abstract func morir()
