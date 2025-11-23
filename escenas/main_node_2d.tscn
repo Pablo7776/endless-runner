@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://d2t8ygt5bns11" path="res://escenas/jugador_character_body_2d.tscn" id="1_vyldc"]
 [ext_resource type="PackedScene" uid="uid://bdrsjjic2k0j6" path="res://escenas/terreno_static_body_2d.tscn" id="2_ufca4"]
 [ext_resource type="PackedScene" uid="uid://bmt5n1op5iwsy" path="res://escenas/spawner_node_2d.tscn" id="3_mgkxu"]
-[ext_resource type="PackedScene" uid="uid://b5t7g2r1ov34g" path="res://escenas/enemigo_spawneable1.tscn" id="4_mx830"]
+[ext_resource type="PackedScene" path="res://escenas/enemigo_spawneable1.tscn" id="4_mx830"]
 
 [node name="Main-Node2D" type="Node2D"]
 

@@ -1,7 +1,10 @@
 extends Personaje
 class_name enemigo_spawneable
+var velocidad = 300
 
 func _physics_process(delta: float) -> void:
+	position.x -= velocidad * delta
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

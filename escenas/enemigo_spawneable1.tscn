@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b5t7g2r1ov34g"]
+[gd_scene load_steps=9 format=3 uid="uid://cbm4l057100dg"]
 
 [ext_resource type="Script" uid="uid://bhonu2om0i756" path="res://scripts/enemigo_spawneable.gd" id="1_86cgw"]
 [ext_resource type="Texture2D" uid="uid://dw2rj3iej4o5b" path="res://recursos/spreetsheeps/Enemigos/2/Attack.png" id="2_v7b1x"]
