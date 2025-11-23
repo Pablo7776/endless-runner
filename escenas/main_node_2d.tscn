@@ -7,9 +7,10 @@
 [node name="Main-Node2D" type="Node2D"]
 
 [node name="Jugador" parent="." instance=ExtResource("1_vyldc")]
-position = Vector2(485, 92)
+position = Vector2(65, 458)
 
 [node name="Terreno-StaticBody2D" parent="." instance=ExtResource("2_ufca4")]
-position = Vector2(516, 553)
+position = Vector2(297, 569)
 
 [node name="spawner-Node2D" parent="." instance=ExtResource("3_mgkxu")]
+position = Vector2(-397, 101)

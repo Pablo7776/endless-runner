@@ -1,19 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://bdrsjjic2k0j6"]
 
-[ext_resource type="Texture2D" uid="uid://0gc7p32g80yh" path="res://icon.svg" id="1_ajjxc"]
 [ext_resource type="Script" uid="uid://d031ldjr17tr8" path="res://scripts/terreno_static_body_2d.gd" id="1_holvi"]
+[ext_resource type="Texture2D" uid="uid://cwu0xd7154j8e" path="res://recursos/spreetsheeps/Terreno/1 Tiles/Tileset.png" id="2_holvi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_holvi"]
-size = Vector2(1239, 117)
+size = Vector2(638, 117)
 
 [node name="Terreno-StaticBody2D" type="StaticBody2D"]
 script = ExtResource("1_holvi")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(38.500023, 0)
-scale = Vector2(9.710938, 1)
-texture = ExtResource("1_ajjxc")
+scale = Vector2(4, 4)
+texture = ExtResource("2_holvi")
+hframes = 2
+vframes = 6
+frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(36.5, -2.5)
+position = Vector2(38, -2.5)
 shape = SubResource("RectangleShape2D_holvi")
