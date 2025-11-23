@@ -1,0 +1,14 @@
+extends Node2D
+
+var random_bala = preload("res://escenas/bala_static_body_2d.tscn")
+
+func _physics_process(delta):
+	look_at(get_global_mouse_position())
+	if Input.is_action_just_pressed("mouse_left"):
+		disparar()
+		
+func disparar():
+	var nuevaBala = random_bala.instantiate()
+	nuevaBala.direccion = rotation
+	nuevaBala.global_position = $spawner.global_position
+	get_tree().current_scene.add_child(nuevaBala)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://d2t8ygt5bns11"]
+[gd_scene load_steps=8 format=3 uid="uid://d2t8ygt5bns11"]
 
 [ext_resource type="Script" uid="uid://cde4q530kjs34" path="res://scripts/jugador_character_body_2d.gd" id="1_68x5f"]
 [ext_resource type="Texture2D" uid="uid://bdejhgb7lvgsj" path="res://recursos/spreetsheeps/Enemigos/3/Walk.png" id="2_68x5f"]
+[ext_resource type="PackedScene" uid="uid://dwrppijb2k56a" path="res://escenas/arma_tumbera_node_2d.tscn" id="3_ed2ao"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_68x5f"]
 size = Vector2(28, 36)
@@ -63,3 +64,5 @@ shape = SubResource("RectangleShape2D_68x5f")
 libraries = {
 &"": SubResource("AnimationLibrary_05awn")
 }
+
+[node name="arma_spawner_Node2D" parent="." instance=ExtResource("3_ed2ao")]
