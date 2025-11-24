@@ -13,7 +13,9 @@ func _physics_process(delta: float) -> void:
 	$AnimationPlayer.play("Idle")
 
 
-
+func __aparecer(lista_de_momentos:Array):
+	lista_de_momentos.shuffle()
+	return lista_de_momentos.pop_back()
 
 func _ready() -> void:
 	area_de_ataque.body_entered.connect(_on_area_de_ataque_body_entered)
