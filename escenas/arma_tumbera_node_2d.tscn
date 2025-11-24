@@ -1,15 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://dwrppijb2k56a"]
 
 [ext_resource type="Script" uid="uid://dilspkq3fhdbt" path="res://scripts/arma_tumbera_node_2d.gd" id="1_hesmk"]
-[ext_resource type="Texture2D" uid="uid://0gc7p32g80yh" path="res://icon.svg" id="3_cqejn"]
+[ext_resource type="Texture2D" uid="uid://y07afdc1sacq" path="res://recursos/spreetsheeps/ArmasBalas/2 Guns/8_1.png" id="2_hesmk"]
 
 [node name="arma_spawner_Node2D" type="Node2D"]
 script = ExtResource("1_hesmk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(19, -0.99999994)
-scale = Vector2(0.37890622, 0.044921882)
-texture = ExtResource("3_cqejn")
+position = Vector2(9, 1.19209275e-07)
+texture = ExtResource("2_hesmk")
 
 [node name="spawner" type="Node2D" parent="."]
-position = Vector2(48, 0)
+position = Vector2(18, -1)

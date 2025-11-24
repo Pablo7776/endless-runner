@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://jqd6rek4al5u"]
 
-[ext_resource type="Texture2D" uid="uid://0gc7p32g80yh" path="res://icon.svg" id="1_8lfdd"]
 [ext_resource type="Script" uid="uid://r5k1qflsg3rk" path="res://scripts/bala_static_body_2d.gd" id="1_gxru4"]
+[ext_resource type="Texture2D" uid="uid://baxch4dkfnf61" path="res://recursos/spreetsheeps/ArmasBalas/5 Bullets/3.png" id="2_gxru4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxru4"]
-size = Vector2(28, 22)
+size = Vector2(12, 12)
 
 [node name="bala_StaticBody2D" type="CharacterBody2D"]
 script = ExtResource("1_gxru4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.265625, 0.2421875)
-texture = ExtResource("1_8lfdd")
+scale = Vector2(3, 3)
+texture = ExtResource("2_gxru4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_gxru4")

@@ -1,4 +1,5 @@
 extends Node2D
+class_name bala
 
 var random_bala = preload("res://escenas/bala_static_body_2d.tscn")
 
@@ -12,3 +13,6 @@ func disparar():
 	nuevaBala.direccion = rotation
 	nuevaBala.global_position = $spawner.global_position
 	get_tree().current_scene.add_child(nuevaBala)
+	
+func hacer_daño():
+	pass
