@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cosh5yiqh0avx"]
+[gd_scene load_steps=6 format=3 uid="uid://cosh5yiqh0avx"]
 
 [ext_resource type="PackedScene" uid="uid://d2t8ygt5bns11" path="res://escenas/jugador_character_body_2d.tscn" id="1_vyldc"]
 [ext_resource type="PackedScene" uid="uid://bdrsjjic2k0j6" path="res://escenas/terreno_static_body_2d.tscn" id="2_ufca4"]
 [ext_resource type="PackedScene" uid="uid://bmt5n1op5iwsy" path="res://escenas/spawner_node_2d.tscn" id="3_mgkxu"]
 [ext_resource type="PackedScene" uid="uid://cbm4l057100dg" path="res://escenas/enemigo_spawneable1.tscn" id="4_mx830"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_mx830"]
+b = Vector2(0, -652)
 
 [node name="Main-Node2D" type="Node2D"]
 
@@ -18,3 +21,9 @@ position = Vector2(-397, 101)
 
 [node name="enemigo_spawneable" parent="." instance=ExtResource("4_mx830")]
 position = Vector2(669, 41)
+
+[node name="pared_invisible" type="StaticBody2D" parent="."]
+position = Vector2(910, 649)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pared_invisible"]
+shape = SubResource("SegmentShape2D_mx830")

@@ -66,3 +66,4 @@ libraries = {
 }
 
 [node name="arma_spawner_Node2D" parent="." instance=ExtResource("3_ed2ao")]
+position = Vector2(2, 0)

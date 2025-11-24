@@ -32,6 +32,7 @@ func _on_area_de_ataque_body_entered(body):
 
 func recibir_dano(dano):
 	vida -= dano
+	print("recibídaño")
 	if vida <= 0:
 		morir()
 
