@@ -8,9 +8,10 @@ script = ExtResource("1_oej3t")
 plataformas = Array[PackedScene]([ExtResource("2_7et6m")])
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
 autostart = true
 
 [node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(1045, 468)
+position = Vector2(1667, 499)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

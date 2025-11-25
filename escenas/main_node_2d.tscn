@@ -14,7 +14,16 @@ b = Vector2(0, -652)
 position = Vector2(65, 458)
 
 [node name="Terreno-StaticBody2D" parent="." instance=ExtResource("2_ufca4")]
-position = Vector2(297, 569)
+position = Vector2(194, 598)
+
+[node name="Terreno-StaticBody2D2" parent="." instance=ExtResource("2_ufca4")]
+position = Vector2(581, 598)
+
+[node name="Terreno-StaticBody2D3" parent="." instance=ExtResource("2_ufca4")]
+position = Vector2(960, 600)
+
+[node name="Terreno-StaticBody2D4" parent="." instance=ExtResource("2_ufca4")]
+position = Vector2(1342, 600)
 
 [node name="spawner-Node2D" parent="." instance=ExtResource("3_mgkxu")]
 position = Vector2(-397, 101)
@@ -23,7 +32,7 @@ position = Vector2(-397, 101)
 position = Vector2(669, 41)
 
 [node name="pared_invisible" type="StaticBody2D" parent="."]
-position = Vector2(910, 649)
+position = Vector2(1189, 649)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="pared_invisible"]
 shape = SubResource("SegmentShape2D_mx830")
