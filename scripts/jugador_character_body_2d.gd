@@ -1,8 +1,8 @@
 extends Personaje
 class_name Jugador
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 600.0
+const JUMP_VELOCITY = -600.0
 var arma = 2
 
 ##Las variables de vida, ataque, area_de_ataque y area_de_colision se pueden definir por inspector
