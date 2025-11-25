@@ -10,6 +10,12 @@ b = Vector2(0, -652)
 
 [node name="Main-Node2D" type="Node2D"]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 3.0
+offset_right = 1151.0
+offset_bottom = 714.0
+color = Color(0.053782076, 0.19718689, 0.23478127, 1)
+
 [node name="Jugador" parent="." instance=ExtResource("1_vyldc")]
 position = Vector2(65, 458)
 
