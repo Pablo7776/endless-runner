@@ -2,9 +2,11 @@ extends Node2D
 class_name bala
 
 var pila_balas: Array[PackedScene] = [
-	preload("res://escenas/balaHija_lenta.tscn"),
 	preload("res://escenas/balaHija_rapida.tscn"),
-	preload("res://escenas/bala_static_body_2d.tscn")
+	preload("res://escenas/bala_static_body_2d.tscn"),
+	preload("res://escenas/balaHija_lenta.tscn")
+
+
 ]
 var pila_inicial: Array[PackedScene]   # <-- guardar la copia
 
