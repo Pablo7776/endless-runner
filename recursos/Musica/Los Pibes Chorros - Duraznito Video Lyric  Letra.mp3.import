@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3qx7maridce7"
+path="res://.godot/imported/Los Pibes Chorros - Duraznito Video Lyric  Letra.mp3-29a41484e0b25618b4a97fec16c041e0.mp3str"
+
+[deps]
+
+source_file="res://recursos/Musica/Los Pibes Chorros - Duraznito Video Lyric  Letra.mp3"
+dest_files=["res://.godot/imported/Los Pibes Chorros - Duraznito Video Lyric  Letra.mp3-29a41484e0b25618b4a97fec16c041e0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
