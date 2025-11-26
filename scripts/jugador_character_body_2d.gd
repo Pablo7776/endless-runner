@@ -3,7 +3,7 @@ class_name Jugador
 
 const SPEED = 600.0
 const JUMP_VELOCITY = -600.0
-var arma = 2
+var arma = 2 ##Este no se uso al final y el ataque tampoco. Capaz se pueda usar para un arma cuerpo a cuerpo
 
 ##Las variables de vida, ataque, area_de_ataque y area_de_colision se pueden definir por inspector
 
@@ -28,9 +28,9 @@ func _physics_process(delta: float) -> void:
 	$AnimationPlayer.play("camina")
 
 
-func atacar(objetivo):
-	if objetivo is Personaje:
-		objetivo.recibir_dano(ataque*arma)
+func atacar(objetivo): ##Al final no se usó, pero capaz sirva para un arma cuerpo a cuerpo
+	#if objetivo is Personaje:
+	#	objetivo.recibir_dano(ataque*arma)
 	pass
 	
 
