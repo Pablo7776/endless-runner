@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxqmf63abj261"]
+[gd_scene load_steps=4 format=3 uid="uid://bxqmf63abj261"]
 
 [ext_resource type="PackedScene" uid="uid://jqd6rek4al5u" path="res://escenas/bala_static_body_2d.tscn" id="1_oqb8g"]
+[ext_resource type="Script" uid="uid://07xdak8vld6h" path="res://escenas/bala_hija_rapida.gd" id="2_0qf3n"]
 [ext_resource type="Texture2D" uid="uid://b6votllgwwoqm" path="res://recursos/spreetsheeps/ArmasBalas/5 Bullets/1.png" id="2_hrrnp"]
 
 [node name="bala_StaticBody2D" instance=ExtResource("1_oqb8g")]
+script = ExtResource("2_0qf3n")
 velocidad = 800.0
 
 [node name="Sprite2D" parent="." index="0"]

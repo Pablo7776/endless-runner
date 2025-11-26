@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Bala
 
 var direccion: float = 0.0
 @export var velocidad: float = 500.0
@@ -11,7 +12,7 @@ func _ready():
 	area_dano.body_entered.connect(hacer_dano)
 	rotation = direccion
 	destruir_en_iseg(1.5)
-	mostrar()
+	##mostrar_velocidad() ##HerramientaDEV.
 
 func _physics_process(delta):
 	velocity = Vector2(velocidad, 0).rotated(direccion)
@@ -26,5 +27,5 @@ func hacer_dano(body):
 		body.recibir_dano(dano)
 		queue_free()
 	
-func mostrar():
+func mostrar_velocidad():
 	print("mi velocidad es: " + str(velocidad))
