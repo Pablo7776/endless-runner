@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://3s4ghsq3sbug"]
+
+[ext_resource type="PackedScene" uid="uid://jqd6rek4al5u" path="res://escenas/bala_static_body_2d.tscn" id="1_4ha6a"]
+
+[node name="bala_StaticBody2D" instance=ExtResource("1_4ha6a")]
+velocidad = 300.0
