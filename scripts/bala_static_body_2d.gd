@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var direccion: float = 0.0
-var velocidad: float = 500.0
+@export var velocidad: float = 500.0
 @export var dano:int = 1
 @export var area_dano:Area2D
 
