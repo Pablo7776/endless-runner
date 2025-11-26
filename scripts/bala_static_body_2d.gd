@@ -6,11 +6,12 @@ var direccion: float = 0.0
 @export var area_dano:Area2D
 
 ###Acá estaría bueno que sea una lista y tener distintas balas, que cada una haga algo distinto###
-
+###la lista de balas quedó en arma_tumbera_node_2d
 func _ready():
 	area_dano.body_entered.connect(hacer_dano)
 	rotation = direccion
 	destruir_en_iseg(1.5)
+	mostrar()
 
 func _physics_process(delta):
 	velocity = Vector2(velocidad, 0).rotated(direccion)
@@ -25,3 +26,5 @@ func hacer_dano(body):
 		body.recibir_dano(dano)
 		queue_free()
 	
+func mostrar():
+	print("mi velocidad es: " + str(velocidad))
