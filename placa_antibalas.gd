@@ -20,4 +20,3 @@ func accion_sobre_jugador(body:Jugador):
 
 func _on_body_entered(body: Node) -> void:
 	accion_sobre_jugador(body)
-	queue_free()
