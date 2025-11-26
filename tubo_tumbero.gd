@@ -1,6 +1,6 @@
 extends Objeto
 class_name TuboTumbero
-var velocidad = 300
+var velocidad = 500
 
 func _physics_process(delta: float) -> void:
 	position.x -= velocidad * delta

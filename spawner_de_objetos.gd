@@ -2,9 +2,9 @@ extends Node2D
 class_name  SpawnerDeObjetos
 
 var objetos = [
-	[preload("res://escenas/Objetos/placa_antibalas.tscn"),2],
-	[preload("res://escenas/Objetos/tubo_tumbero.tscn"),1],
-	[preload("res://escenas/Objetos/vida_extra.tscn"),12]
+	preload("res://escenas/Objetos/placa_antibalas.tscn"),
+	preload("res://escenas/Objetos/tubo_tumbero.tscn"),
+	preload("res://escenas/Objetos/vida_extra.tscn")
 	]
 
 @export var tiempo_spawn := 1.2 

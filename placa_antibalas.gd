@@ -1,6 +1,6 @@
 extends Objeto
 class_name PlacaAntibalas
-var velocidad = 300
+var velocidad = 500
 var vida_actual:int
 
 func _physics_process(delta: float) -> void:

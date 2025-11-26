@@ -1,9 +1,10 @@
 extends Objeto
 class_name VidaExtra
-var velocidad = 300
+var velocidad = 500
 
 func _physics_process(delta: float) -> void:
 	position.x -= velocidad * delta
+
 
 func __aparecer(lista_de_momentos) -> float:
 	return randf()
