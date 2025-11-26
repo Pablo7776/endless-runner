@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://rg2saa6ogms2"]
+
+[ext_resource type="Script" uid="uid://wx5eym1abuo4" path="res://vida_extra.gd" id="1_7kq1g"]
+[ext_resource type="Texture2D" uid="uid://c43f2ckk3husy" path="res://recursos/spreetsheeps/Objetos/1 Icons/Icon14_08.png" id="2_8kqjd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_shrfy"]
+height = 38.051414
+
+[node name="vida_extra" type="RigidBody2D"]
+script = ExtResource("1_7kq1g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_8kqjd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.73129296
+shape = SubResource("CapsuleShape2D_shrfy")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

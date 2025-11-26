@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6kjftbbwbjon"]
+
+[ext_resource type="Script" uid="uid://r0ceomyp2e38" path="res://placa_antibalas.gd" id="1_ocib1"]
+[ext_resource type="Texture2D" uid="uid://k6eao1mrswr7" path="res://recursos/spreetsheeps/Objetos/1 Icons/Icon14_29.png" id="2_bf7nt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ir0bx"]
+size = Vector2(26.142632, 24.832321)
+
+[node name="placa_antibalas" type="RigidBody2D"]
+script = ExtResource("1_ocib1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_bf7nt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.009873882, 0.2070382)
+rotation = -0.39968044
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_ir0bx")

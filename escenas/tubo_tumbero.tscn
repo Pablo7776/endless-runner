@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2nplx7wn452c"]
+
+[ext_resource type="Script" uid="uid://dyhiruu3wwx17" path="res://tubo_tumbero.gd" id="1_qge82"]
+[ext_resource type="Texture2D" uid="uid://u1jvsx26otgp" path="res://recursos/spreetsheeps/Objetos/1 Icons/Icon14_35.png" id="2_1byox"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fgbib"]
+radius = 8.472864
+height = 36.715744
+
+[node name="tubo_tumbero" type="RigidBody2D"]
+script = ExtResource("1_qge82")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_1byox")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 0.73129296
+shape = SubResource("CapsuleShape2D_fgbib")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
