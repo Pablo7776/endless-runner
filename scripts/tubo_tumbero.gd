@@ -12,6 +12,6 @@ func accion_sobre_jugador(body:Jugador):
 
 
 func _on_body_entered(body) -> void:
-	if body is Personaje:
+	if body is Jugador:
 		accion_sobre_jugador(body)
 		queue_free()

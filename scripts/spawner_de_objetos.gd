@@ -10,7 +10,7 @@ var aparecibles = [
 	preload("res://escenas/cajita_de_balas.tscn")
 	]
 
-@export var tiempo_spawn := 3 
+@export var tiempo_spawn := 1 
 @export var posicion_spawn: Node2D
 
 func _ready():
