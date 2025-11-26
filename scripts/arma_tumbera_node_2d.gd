@@ -25,7 +25,7 @@ func disparar():
 	if pila_balas.is_empty():
 		print("La pila está vacía, no hay más balas.")
 		return
-	
+	pila_balas.shuffle()
 	var escena_bala = pila_balas.pop_back()  # POP real
 	var nueva_bala = escena_bala.instantiate()
 	

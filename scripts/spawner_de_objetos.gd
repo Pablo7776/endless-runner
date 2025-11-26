@@ -6,10 +6,11 @@ var aparecibles = [
 	preload("res://escenas/Objetos/tubo_tumbero.tscn"),
 	preload("res://escenas/Objetos/vida_extra.tscn"),
 	preload("res://escenas/enemigo_spawneable1.tscn"),
-	preload("res://escenas/enemigo_2.tscn")
+	preload("res://escenas/enemigo_2.tscn"),
+	preload("res://escenas/cajita_de_balas.tscn")
 	]
 
-@export var tiempo_spawn := 5 
+@export var tiempo_spawn := 3 
 @export var posicion_spawn: Node2D
 
 func _ready():

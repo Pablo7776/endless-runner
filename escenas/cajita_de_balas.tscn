@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://71gox8vyiaoj"]
+
+[ext_resource type="Script" uid="uid://b7h6iwqm4qn23" path="res://cajita_de_balas.gd" id="1_fp8o5"]
+[ext_resource type="Texture2D" uid="uid://cs1ope6beg68t" path="res://recursos/spreetsheeps/Objetos/1 Icons/Icon14_40.png" id="2_5w0h5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jel4u"]
+size = Vector2(26, 30)
+
+[node name="cajita_de_balas" type="Area2D"]
+script = ExtResource("1_fp8o5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5w0h5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jel4u")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

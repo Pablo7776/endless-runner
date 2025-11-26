@@ -1,5 +1,5 @@
 extends Bala
-class_name BalaRápida
+class_name BalaRapida
 
 func _ready():
 	area_dano.body_entered.connect(hacer_dano)
