@@ -9,7 +9,7 @@ var aparecibles = [
 	preload("res://escenas/enemigo_2.tscn")
 	]
 
-@export var tiempo_spawn := 5 
+@export var tiempo_spawn := 1 
 @export var posicion_spawn: Node2D
 
 func _ready():
