@@ -4,7 +4,8 @@ class_name  SpawnerDeObjetos
 var objetos = [
 	preload("res://escenas/Objetos/placa_antibalas.tscn"),
 	preload("res://escenas/Objetos/tubo_tumbero.tscn"),
-	preload("res://escenas/Objetos/vida_extra.tscn")
+	preload("res://escenas/Objetos/vida_extra.tscn"),
+	preload("res://escenas/enemigo_spawneable1.tscn")
 	]
 
 @export var tiempo_spawn := 5 
