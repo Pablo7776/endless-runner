@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://3s4ghsq3sbug"]
+[gd_scene load_steps=3 format=3 uid="uid://dc62nfevkao3a"]
 
 [ext_resource type="PackedScene" uid="uid://jqd6rek4al5u" path="res://escenas/bala_static_body_2d.tscn" id="1_4ha6a"]
+[ext_resource type="Texture2D" uid="uid://cyyqug3r3h8sv" path="res://recursos/spreetsheeps/ArmasBalas/5 Bullets/9.png" id="2_gawsr"]
 
 [node name="bala_StaticBody2D" instance=ExtResource("1_4ha6a")]
 velocidad = 300.0
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_gawsr")

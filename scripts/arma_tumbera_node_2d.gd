@@ -1,5 +1,5 @@
 extends Node2D
-class_name bala
+class_name Arma
 
 var pila_balas: Array[PackedScene] = [
 	preload("res://escenas/balaHija_rapida.tscn"),
@@ -19,7 +19,7 @@ func _physics_process(delta):
 
 func _ready():
 	pila_inicial = pila_balas.duplicate()
-	MostrarLista()
+	#MostrarLista()  ###HerramientaDEV
 	
 func disparar():
 	if pila_balas.is_empty():
@@ -33,15 +33,13 @@ func disparar():
 	nueva_bala.global_position = $spawner.global_position
 	get_tree().current_scene.add_child(nueva_bala)
 
-	print("Disparé una bala. Pila restante: ", pila_balas.size())
+	print("Disparé una bala. Balas en recámara: ", pila_balas.size())
 
-	
+
 func recargar():
 	pila_balas = pila_inicial.duplicate()
 	print("Recargado! Balas disponibles:", pila_balas.size())
 
-func hacer_daño():
-	pass
 
 func MostrarLista():
 	print("Contenido de la pila:")
