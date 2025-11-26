@@ -7,14 +7,14 @@ var objetos = [
 	preload("res://escenas/Objetos/vida_extra.tscn")
 	]
 
-@export var tiempo_spawn := 1.2 
+@export var tiempo_spawn := 5 
 @export var posicion_spawn: Node2D
 
 func _ready():
-	spawn_loop()
+	esperar_para_spawn()
 
 
-func spawn_loop():
+func esperar_para_spawn():
 	while true:
 		await get_tree().create_timer(tiempo_spawn).timeout
 		spawnear_objeto()

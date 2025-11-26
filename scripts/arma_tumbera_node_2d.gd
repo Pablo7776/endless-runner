@@ -13,6 +13,3 @@ func disparar():
 	nuevaBala.direccion = rotation
 	nuevaBala.global_position = $spawner.global_position
 	get_tree().current_scene.add_child(nuevaBala)
-	
-func hacer_daño():
-	pass

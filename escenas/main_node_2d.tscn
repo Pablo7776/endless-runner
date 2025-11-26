@@ -45,5 +45,5 @@ position = Vector2(1189, 649)
 shape = SubResource("SegmentShape2D_mx830")
 
 [node name="spawner_de_objetos" parent="." node_paths=PackedStringArray("posicion_spawn") instance=ExtResource("5_v6ky7")]
-position = Vector2(523, 300)
+position = Vector2(622, 579)
 posicion_spawn = NodePath(".")

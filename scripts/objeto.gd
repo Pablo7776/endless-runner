@@ -1,15 +1,7 @@
 @abstract class_name Objeto
-extends IAparecible
+extends Node2D
 
-var __momento_de_aparicion:float
-var area_de_colision:Area2D
+var area_de_colision:CollisionShape2D
+var velocidad:int = 450
 
-@abstract func __aparecer(lista_de_momentos) -> float
 @abstract func accion_sobre_jugador(body:Jugador)
-
-
-'''Objeto(Ubicable)
-_area_de_colision: Area2D 
-_posicion_fija:parordenado
---------
--ubicar (lista_de_ubicaciones): parordenado'''
